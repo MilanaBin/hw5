@@ -1,0 +1,21 @@
+[project]
+name = "HW5"
+version = "0.1.0"
+description = "The homework 5"
+authors = [
+    {name = "MilanaBin", email = "vgpv.milana@gmail.com"},
+]
+dependencies = [
+    "pip>=24.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
