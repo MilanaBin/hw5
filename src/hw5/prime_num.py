@@ -1,7 +1,10 @@
 import random
 
+
 def is_prime(x):
-    for i in range(2, (x//2)+1):
+    if x <= 1:
+        return False
+    for i in range(2, (x // 2) + 1):
         if x % i == 0:
             return False
     return True
@@ -17,7 +20,7 @@ def primes(count: int) -> list:
     return primes
 
 
-def checksum(nums: list) -> int:
+def сalc_checksum(nums: list) -> int:
     checksum = 0
     for num in nums:
         checksum = (checksum + num) * 113
@@ -31,8 +34,8 @@ def pipeline() -> int:
     random.seed(100)
     random.shuffle(primes_list)
 
-    checksum = checksum(primes_list)
-    return checksum
+    checksum_value = сalc_checksum(primes_list)
+    return checksum_value
 
 
 if __name__ == "__main__":
