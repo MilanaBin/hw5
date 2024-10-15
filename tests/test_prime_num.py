@@ -24,7 +24,8 @@ def test_calculate_checksum():
 
 
 def test_pipeline():
-    assert pipeline() == 7785816
+    aprimes_list, checksum_value = pipeline(1000, 100)
+    assert checksum_value == 7785816
 
 
 if __name__ == "__main__":
